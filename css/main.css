@@ -1,0 +1,613 @@
+@-webkit-keyframes signal {
+  from {
+    background-color: #F8F8F8; }
+  50% {
+    background-color: #c5e1f8; }
+  to {
+    background-color: #F8F8F8; } }
+
+@keyframes signal {
+  from {
+    background-color: #F8F8F8; }
+  50% {
+    background-color: #c5e1f8; }
+  to {
+    background-color: #F8F8F8; } }
+
+.intro {
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  height: 90vh;
+  background-color: #F8F8F8; }
+  @media (min-width: 750px) and (max-width: 1099px) {
+    .intro {
+      width: 80%;
+      margin: auto;
+      padding: 0 10%; } }
+  @media (min-width: 1100px) {
+    .intro {
+      -webkit-animation: signal 1.5s;
+      animation: signal 1.5s;
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s;
+      width: 100%;
+      height: 91vh; } }
+  .intro .ps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    height: 90%;
+    width: 85%;
+    margin: auto; }
+    .intro .ps .first {
+      font-weight: 900;
+      color: #4A9DFD;
+      font-size: 2em;
+      font-family: "Advent Pro", sans-serif; }
+      @media (min-width: 750px) and (max-width: 1099px) {
+        .intro .ps .first {
+          font-size: 4em; } }
+      @media (min-width: 1100px) {
+        .intro .ps .first {
+          font-size: 4em; } }
+    .intro .ps .second {
+      font-family: "Aleo", serif;
+      font-size: 1em;
+      font-weight: 900;
+      color: black; }
+      @media (min-width: 750px) and (max-width: 1099px) {
+        .intro .ps .second {
+          font-size: 1.8em; } }
+      @media (min-width: 1100px) {
+        .intro .ps .second {
+          font-size: 1.5em; } }
+      .intro .ps .second a {
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        color: black;
+        font-weight: bold; }
+        @media (min-width: 750px) and (max-width: 1099px) {
+          .intro .ps .second a {
+            font-size: 1em; } }
+        @media (min-width: 1100px) {
+          .intro .ps .second a {
+            font-size: 1em; } }
+      @media (min-width: 1100px) {
+        .intro .ps .second .desk-no-decor {
+          font-weight: 300;
+          text-decoration: none; } }
+    .intro .ps .third a {
+      font-family: "Open Sans Condensed", sans-serif;
+      font-size: 1em;
+      font-weight: bold;
+      color: black;
+      font-size: .7em; }
+      @media (min-width: 750px) and (max-width: 1099px) {
+        .intro .ps .third a {
+          font-size: 1em; } }
+      @media (min-width: 1100px) {
+        .intro .ps .third a {
+          font-size: 1em; } }
+      @media (min-width: 1100px) {
+        .intro .ps .third a {
+          font-size: 1.3em; } }
+
+@-webkit-keyframes swim {
+  from {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  50% {
+    -webkit-transform: scaleX(-0.7);
+    transform: scaleX(-0.7); }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+
+@keyframes swim {
+  from {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  50% {
+    -webkit-transform: scaleX(-0.7);
+    transform: scaleX(-0.7); }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+
+@-webkit-keyframes shine {
+  from { }
+  50% { }
+  to { } }
+
+@keyframes shine {
+  from { }
+  50% { }
+  to { } }
+
+nav {
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1vh 3vw;
+  height: 9vh;
+  background-color: white; }
+  nav a {
+    width: 9vh; }
+    nav a path {
+      stroke: black;
+      fill: white; }
+    nav a #backfin {
+      -webkit-animation: swim 2s ease-in-out;
+      animation: swim 2s ease-in-out;
+      -webkit-animation-iteration-count: 2;
+      animation-iteration-count: 2;
+      -webkit-transform-origin: 40% 50%;
+      transform-origin: 40% 50%; }
+    nav a #backfin.backfinswing {
+      -webkit-animation: swim 3s infinite;
+      animation: swim 3s infinite;
+      -webkit-transform-origin: 40% 50%;
+      transform-origin: 40% 50%; }
+  @media (min-width: 750px) and (max-width: 1099px) {
+    nav {
+      width: 80%;
+      margin: auto;
+      padding: 1vh 0; } }
+  @media (min-width: 1100px) {
+    nav {
+      width: 100%;
+      margin: auto;
+      padding: 1vh 0; } }
+
+@-webkit-keyframes slideleft {
+  from {
+    left: 3%;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  30% {
+    left: 0;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  50% {
+    left: 1%;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  75% {
+    left: 0;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  88% {
+    left: .5%;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  to {
+    left: 0;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; } }
+
+@keyframes slideleft {
+  from {
+    left: 3%;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  30% {
+    left: 0;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  50% {
+    left: 1%;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  75% {
+    left: 0;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  88% {
+    left: .5%;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  to {
+    left: 0;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; } }
+
+.portfolio {
+  overflow: auto;
+  width: 100%;
+  text-align: center;
+  padding: 10% 0 0 0; }
+  @media (min-width: 1100px) {
+    .portfolio {
+      width: 45%;
+      height: 99vh;
+      padding: 2vh 0 0 0;
+      margin-top: 1vh;
+      background-color: #F8F8F8; } }
+  .portfolio h2 {
+    font-weight: 900;
+    color: #4A9DFD;
+    font-size: 2em;
+    font-family: "Advent Pro", sans-serif;
+    margin-bottom: 5%; }
+    @media (min-width: 750px) and (max-width: 1099px) {
+      .portfolio h2 {
+        font-size: 4em; } }
+    @media (min-width: 1100px) {
+      .portfolio h2 {
+        font-size: 4em; } }
+    @media (min-width: 1100px) {
+      .portfolio h2 {
+        display: none; } }
+  .portfolio ul {
+    list-style: none;
+    padding: 6vh 0 0 0; }
+    .portfolio ul li {
+      position: relative;
+      width: 85%;
+      margin: 0 auto 15% auto;
+      padding: 10% 0;
+      -webkit-box-shadow: -4px 10px 78px -20px rgba(0, 0, 0, 0.45);
+      box-shadow: -4px 10px 78px -20px rgba(0, 0, 0, 0.45); }
+      @media (min-width: 750px) and (max-width: 1099px) {
+        .portfolio ul li {
+          width: 80%; } }
+      @media (min-width: 1100px) {
+        .portfolio ul li {
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          height: 27vh;
+          width: 37vh;
+          margin: 5% auto;
+          margin-bottom: 1%;
+          padding: 0; } }
+      .portfolio ul li .web-cells {
+        width: 90%;
+        -webkit-filter: grayscale(80%);
+        filter: grayscale(80%); }
+        @media (min-width: 1100px) {
+          .portfolio ul li .web-cells {
+            display: none; } }
+      .portfolio ul li .web-desks {
+        display: none; }
+        @media (min-width: 1100px) {
+          .portfolio ul li .web-desks {
+            display: block;
+            width: 100%;
+            height: auto;
+            -webkit-filter: grayscale(80%);
+            filter: grayscale(80%);
+            opacity: 1;
+            -webkit-transition: opacity .3s;
+            transition: opacity .3s; }
+            .portfolio ul li .web-desks:hover {
+              opacity: 0.1; } }
+      .portfolio ul li .overlay {
+        width: 90%;
+        margin: auto; }
+        @media (min-width: 1100px) {
+          .portfolio ul li .overlay {
+            text-align: center;
+            vertical-align: middle;
+            line-height: 27vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #4A9DFD;
+            color: white; }
+            .portfolio ul li .overlay .overlay-text {
+              font-size: 1.2em; } }
+      .portfolio ul li a {
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        color: black;
+        font-weight: 700;
+        text-decoration: none; }
+        @media (min-width: 750px) and (max-width: 1099px) {
+          .portfolio ul li a {
+            font-size: 2em; } }
+    @media (min-width: 1100px) {
+      .portfolio ul .one {
+        -webkit-animation: slideleft .5s;
+        animation: slideleft .5s;
+        margin-top: 0; } }
+    @media (min-width: 1100px) {
+      .portfolio ul .two {
+        -webkit-animation: slideleft 1s;
+        animation: slideleft 1s; } }
+    @media (min-width: 1100px) {
+      .portfolio ul .tri {
+        -webkit-animation: slideleft .8s;
+        animation: slideleft .8s; } }
+
+.reasons {
+  padding: 10% 0;
+  background-color: #F8F8F8; }
+  @media (min-width: 750px) and (max-width: 1099px) {
+    .reasons {
+      width: 80%;
+      margin: auto;
+      margin-bottom: 10%; } }
+  @media (min-width: 1100px) {
+    .reasons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 5% 5%;
+      background-color: white; } }
+  .reasons h2 {
+    width: 85%;
+    text-align: center;
+    font-weight: 900;
+    color: #4A9DFD;
+    font-size: 2em;
+    font-family: "Advent Pro", sans-serif;
+    margin: auto;
+    margin-bottom: 2em; }
+    @media (min-width: 750px) and (max-width: 1099px) {
+      .reasons h2 {
+        font-size: 4em; } }
+    @media (min-width: 1100px) {
+      .reasons h2 {
+        font-size: 4em; } }
+    @media (min-width: 1100px) {
+      .reasons h2 {
+        margin-bottom: 1.8em;
+        width: 100%; } }
+  .reasons p {
+    margin: 0 auto 5% auto;
+    width: 80%;
+    font-family: "Aleo", serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #727173;
+    line-height: 1.5em;
+    text-align: justify;
+    text-justify: newspaper; }
+    @media (min-width: 750px) and (max-width: 1099px) {
+      .reasons p {
+        font-size: 2em; } }
+    @media (min-width: 1100px) {
+      .reasons p {
+        font-size: 1.6em; } }
+    @media (min-width: 750px) and (max-width: 1099px) {
+      .reasons p {
+        text-align: center;
+        width: 70%; } }
+    @media (min-width: 1100px) {
+      .reasons p {
+        width: 22%; } }
+
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgrey;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgrey;
+  opacity: 1;
+  /* Firefox */ }
+
+::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgrey;
+  opacity: 1;
+  /* Firefox */ }
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgrey;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: lightgrey; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: lightgrey; }
+
+.contact {
+  width: 100%;
+  height: 15vh;
+  background-color: #3776BD;
+  height: 91vh;
+  padding-top: 5%;
+  font-family: "Open Sans Condensed", sans-serif; }
+  @media (min-width: 750px) and (max-width: 1099px) {
+    .contact {
+      width: 80%;
+      margin: auto; } }
+  @media (min-width: 1100px) {
+    .contact {
+      width: 95%;
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      height: 50vh;
+      padding: 5%;
+      background-color: #254E7D; } }
+  .contact .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    height: 20%;
+    width: 85%;
+    margin: 5vh auto; }
+    @media (min-width: 1100px) {
+      .contact .left {
+        width: 30%;
+        height: 100%;
+        margin: 0; } }
+    .contact .left .name {
+      border: none;
+      border-radius: 8px 8px;
+      width: 70%;
+      margin: auto;
+      background-color: #4A9DFD;
+      color: lightgrey; }
+      @media (min-width: 750px) and (max-width: 1099px) {
+        .contact .left .name {
+          height: 40px; } }
+      @media (min-width: 1100px) {
+        .contact .left .name {
+          font-size: 1.2em;
+          width: 100%;
+          height: 10%; } }
+  .contact .mid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    height: 40%;
+    width: 85%;
+    margin: auto; }
+    @media (min-width: 1100px) {
+      .contact .mid {
+        width: 30%;
+        height: 100%;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+    .contact .mid .lng-txt {
+      height: 50%;
+      border: none;
+      border-radius: 8px 8px;
+      background-color: #4A9DFD;
+      width: 100%;
+      padding: 7px;
+      font-family: "Open Sans Condensed", sans-serif;
+      color: red; }
+      @media (min-width: 1100px) {
+        .contact .mid .lng-txt {
+          font-size: 1.2em; } }
+    .contact .mid .submit-btn {
+      width: 70%;
+      height: 30px;
+      margin: 0 auto 0 auto;
+      border-radius: 10px 10px;
+      border: 2px black solid;
+      background-color: #3776BD; }
+      @media (min-width: 750px) and (max-width: 1099px) {
+        .contact .mid .submit-btn {
+          height: 40px; } }
+      @media (min-width: 1100px) {
+        .contact .mid .submit-btn {
+          font-weight: 700;
+          margin: 0 auto; } }
+  .contact .logo-bottom {
+    display: block;
+    width: 30%;
+    margin: 0 auto 5% auto;
+    fill: none;
+    stroke: darkgray; }
+
+@keyframes swim {
+  from {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  50% {
+    -webkit-transform: scaleX(-0.7);
+    transform: scaleX(-0.7); }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+    @media (min-width: 1100px) {
+      .contact .logo-bottom {
+        margin: 0;
+        padding: 4%; } }
+
+@media (min-width: 1100px) {
+  .contact.scrolled {
+    -webkit-animation: arrive .5s;
+    animation: arrive .5s;
+    width: 100%;
+    background-color: #3776BD; }
+  @-webkit-keyframes arrive {
+    from {
+      width: 95%;
+      background-color: #214671; }
+    to {
+      width: 100%;
+      background-color: #3776BD; } }
+  @keyframes arrive {
+    from {
+      width: 95%;
+      background-color: #214671; }
+    to {
+      width: 100%;
+      background-color: #3776BD; } } }
+
+* {
+  overflow: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  scroll-behavior: smooth; }
+
+@media (min-width: 1100px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    width: 100%; } }
+
+@media (min-width: 1100px) {
+  .container .navintro {
+    width: 45%; } }
+
+/*# sourceMappingURL=main.css.map */
