@@ -59,7 +59,9 @@
       font-weight: 900;
       color: #4A9DFD;
       font-size: 2em;
-      font-family: "Advent Pro", sans-serif; }
+      font-family: "Advent Pro", sans-serif; 
+      font-display: swap;
+    }
       @media (min-width: 750px) and (max-width: 1099px) {
         .intro .ps .first {
           font-size: 4em; } }
@@ -70,7 +72,9 @@
       font-family: "Aleo", serif;
       font-size: 1em;
       font-weight: 900;
-      color: black; }
+      color: black; 
+      font-display: swap;
+    }
       @media (min-width: 750px) and (max-width: 1099px) {
         .intro .ps .second {
           font-size: 1.8em; } }
@@ -82,7 +86,9 @@
         font-size: 1em;
         font-weight: bold;
         color: black;
-        font-weight: bold; }
+        font-weight: bold; 
+        font-display: swap;
+      }
         @media (min-width: 750px) and (max-width: 1099px) {
           .intro .ps .second a {
             font-size: 1em; } }
@@ -98,7 +104,9 @@
       font-size: 1em;
       font-weight: bold;
       color: black;
-      font-size: .7em; }
+      font-size: .7em; 
+      font-display: swap;
+    }
       @media (min-width: 750px) and (max-width: 1099px) {
         .intro .ps .third a {
           font-size: 1em; } }
@@ -372,6 +380,7 @@ nav {
     font-weight: 900;
     color: #4A9DFD;
     font-size: 2em;
+    font-display: swap;
     font-family: "Advent Pro", sans-serif;
     margin: auto;
     margin-bottom: 2em; }
@@ -391,6 +400,7 @@ nav {
     font-family: "Aleo", serif;
     font-size: 1em;
     font-weight: 300;
+    font-display: swap;
     color: #727173;
     line-height: 1.5em;
     text-align: justify;
@@ -447,7 +457,9 @@ nav {
   background-color: #3776BD;
   height: 91vh;
   padding-top: 5%;
-  font-family: "Open Sans Condensed", sans-serif; }
+  font-family: "Open Sans Condensed", sans-serif; 
+  font-display: swap;
+}
   @media (min-width: 750px) and (max-width: 1099px) {
     .contact {
       width: 80%;
