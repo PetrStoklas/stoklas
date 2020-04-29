@@ -235,7 +235,7 @@ nav {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; } }
 
-.portfolio {
+/* .portfolio {
   overflow: auto;
   width: 100%;
   text-align: center;
@@ -344,7 +344,7 @@ nav {
     @media (min-width: 1100px) {
       .portfolio ul .tri {
         -webkit-animation: slideleft .8s;
-        animation: slideleft .8s; } }
+        animation: slideleft .8s; } } */
 
 .reasons {
   padding: 10% 0;
