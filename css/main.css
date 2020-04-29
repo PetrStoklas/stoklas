@@ -485,9 +485,10 @@ nav {
         margin: 0; } }
     .contact .left .name {
       border: none;
+      padding: 10px;
       border-radius: 8px 8px;
       width: 70%;
-      margin: auto;
+      margin: 5px auto;
       background-color: #4A9DFD;
       color: lightgrey; }
       @media (min-width: 750px) and (max-width: 1099px) {
