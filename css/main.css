@@ -155,19 +155,19 @@ nav {
   padding: 1vh 3vw;
   height: 9vh;
   background-color: white; }
-  nav a {
+  nav div {
     width: 9vh; }
-    nav a path {
+    nav div path {
       stroke: black;
       fill: white; }
-    nav a #backfin {
+    nav div #backfin {
       -webkit-animation: swim 2s ease-in-out;
       animation: swim 2s ease-in-out;
       -webkit-animation-iteration-count: 2;
       animation-iteration-count: 2;
       -webkit-transform-origin: 40% 50%;
       transform-origin: 40% 50%; }
-    nav a #backfin.backfinswing {
+    nav div #backfin.backfinswing {
       -webkit-animation: swim 3s infinite;
       animation: swim 3s infinite;
       -webkit-transform-origin: 40% 50%;
