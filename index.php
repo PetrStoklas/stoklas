@@ -1,5 +1,5 @@
-<?php 
-    echo "phpko funguje"
+<?php
+    include_once 'mail/mail.php';
 ?>
 
 <!DOCTYPE html>
@@ -18,160 +18,23 @@
         <div class="container">
             <div class="navintro">
                 <!-- nav with shark -->
-                <nav>
-                    <a class="shrk" href="#" aria-label="home">
-                        <svg alt="home" class="logo-sh" width="100%" height="100%" viewBox="0 0 518 355" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
-                        <g>
-                            
-                            <path id="leftfin" d="M168.115,295.615l-161.93,52.98l129.24,-83.52l32.69,30.54Z" style="fill-rule:nonzero;stroke-width:3px;"/>
-                            
-                            <path id="rightfin" d="M259.895,292.525l163.99,46.21l-132.6,-78.08l-31.39,31.87Z" style="fill-rule:nonzero;stroke-width:3px;"/>
-                            
-                            <path id="backfin" d="M311.525,240.635l91.88,-19.03l54.77,53.98l-3.71,-64.32l57.05,-205.08l-109.14,197.52l-53.03,-1.17l-37.82,38.1Z" style="stroke-width:3px;"/>
-
-                            <path id="body" d="M214.985,329.575l124.05,-127.5l-124.05,-20.67l-135.54,20.67l135.54,127.5Z" style="stroke-width:3px;"/>
-                            
-                            <path id="upfin" d="M223.025,174.665l0,-92.77l-13.79,92.77l13.79,0Z" style="fill-rule:nonzero;stroke-width:2px;"/>
-
-                        </g>
-                        </svg>
-                    </a>
-
-                </nav>
+                <?php require_once 'body/nav.php'; ?>
                 <!-- intro texts -->
-                <div class="intro" id=#intro>  <!-- INTRODUCTION SECTION-->
-                    <div class="ps">
-                        <p class="first">
-                            I'm Peter, your Web Designer and I will make your online media shine.
-                        </p>
-                        <br>
-                        <p class="second">
-                        What I love is scuba-diving, skiing and highly functional websites with a clean design. Just <a href="#contact-wrap">contact</a> me so we can start developing your responsive web site.
-                        </p>
-                        <br>
-                        <div class="third">
-                            <a href="#reasons"> 3 reasons why to invest into your website </a>
-                        </div>
-                    </div>  
-                </div>
+                <?php require_once 'body/intro.php'; ?>
             </div>
 
 <!--            <div class="portfolio" id="portfolio"> -->
-<!--                &lt;!&ndash; portfolio three projects &ndash;&gt;-->
-<!--                <h2>portfolio</h2>-->
-<!--                &lt;!&ndash; <img class="arrow" src="img/Down_red_arrow.png" alt="#"> &ndash;&gt;-->
-<!--                <ul>-->
-<!--                    <li class="one">-->
-<!--                        <a href="#">-->
-
-<!--                            <img src="img/web-cell.jpg" alt="web-photo" class="web-cells">-->
-<!--                            -->
-<!--                            <div class="overlay">-->
-<!--                                <p class="overlay-text">Web projekt pro slavnou firmu 2000</p>-->
-<!--                            </div>-->
-
-<!--                            <img src="img/web-desk.jpg" alt="web-photo" class="web-desks hover-hide">-->
-
-<!--                        </a>-->
-
-<!--                    </li>-->
-<!--                    <li class="two">-->
-<!--                        <a href="https://www.google.com">-->
-
-<!--                            <img src="img/web-cell.jpg" alt="web-photo" class="web-cells">-->
-<!--                            -->
-
-<!--                            <div class="overlay">-->
-<!--                                <p class="overlay-text">Web projekt pro slavnou firmu 2010</p>-->
-<!--                            </div>-->
-
-<!--                            <img src="img/web-desk.jpg" alt="web-photo" class="web-desks hover-hide">-->
-<!--                            -->
-<!--                        </a> -->
-<!--                    </li>-->
-<!--                    <li class="tri">-->
-<!--                        <a href="#">-->
-
-<!--                            <img src="img/web-cell.jpg" alt="web-photo" class="web-cells">-->
-<!--                            -->
-
-<!--                            <div class="overlay">-->
-<!--                                <p class="overlay-text">Web projekt pro slavnou firmu 2020</p>-->
-<!--                            </div>-->
-
-<!--                            <img src="img/web-desk.jpg" alt="web-photo" class="web-desks hover-hide">-->
-<!--                        </a>-->
-<!--                    </li>-->
-
-<!--                    &lt;!&ndash; BUTTON FOR MORE PORTFOLIO NOT NEEDED NOW&ndash;&gt;-->
-
-<!--                    &lt;!&ndash; <li class="more-port">-->
-<!--                        <a class="more-a" href="#portfolio">more work</a>-->
-<!--                    </li> &ndash;&gt;-->
-<!--                </ul>-->
+<!--                &lt;!&ndash; portfolio three projects &ndash;&gt;-->            
 <!--            </div>  -->
         
             <div class="reasons" id="reasons">
                 <!-- additional text - reasons to have good website -->
-                <h2>3 reasons to invest into your website</h2>
-
-                <p>
-                Online marketplace is inevitably growing and thus it is important to keep track with it or do a step forward. One of the tricks is SEO which if done well makes your website more accessible via search engine. Result of this is having more visitors.
-                </p>
-                <br>
-
-                <p class='middle-reason'>
-                Once your website is easy to find, it is important that your site is designed responsively so people can enjoy your online channel not only on their desktop computers but mainly smartphones as the number of mobile web visits is outgrowing the one of visits made from desktops.
-                </p>
-                <br>
-
-                <p>
-                Now you are having amazing website but how is the logic behind it? It is good idea to keep it as simple as possible not only because of easy maintanance later but also to reduce energy costs. 
-                </p>
+                <?php require_once 'body/reasons.php'; ?>
             </div>
         </div>
         <div id="contact-wrap">
                 <!-- contact form -->
-            <form id="contact" class="contact" method ="post" action="#contact">
-                <!-- PROVIZORNI KONTAKTY-->
-                <!-- <div class="contacts" id=#contacts>
-                    <h2 class="cntct-header">contacts</h2>               
-
-                    <a class="cntct-link" href="mailto:petrstoklas@gmail.com?">petrstoklas@gmail.com</a>
-
-                    <a class="cntct-link" href="http://www.linkedin.com/in/petrstoklas">my linkedin</a>
-                </div> -->
-
-                <div class="left">
-                    <input class="name" type="text" name="fname" placeholder="First Name" label="first name input">
-                    
-                    <input class="name" type="text" name="sname" placeholder="Second Name" label="second name input">
-                    
-                    <input class="name" type="mail" name="mail" placeholder="Your Email" label="email address input">
-                </div>
-                <div class="mid">
-                    <textarea class="lng-txt" name="long_text" placeholder="Type your message here..." label="message content input"></textarea>
-                    
-                    <button class="submit-btn" type="submit" name="submit">Send Me Message!</button>
-                </div>   
-                
-                <svg class="logo-bottom" width="100%" height="100%" viewBox="0 0 518 355" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
-                    <g>
-                        
-                        <path id="leftfinbottom" d="M168.115,295.615l-161.93,52.98l129.24,-83.52l32.69,30.54Z" style="fill-rule:none;stroke-width:3px;"/>
-                        
-                        <path id="rightfinbottom" d="M259.895,292.525l163.99,46.21l-132.6,-78.08l-31.39,31.87Z" style="fill-rule:nonzero;stroke-width:3px;"/>
-                        
-                        <path id="backfinbottom" d="M311.525,240.635l91.88,-19.03l54.77,53.98l-3.71,-64.32l57.05,-205.08l-109.14,197.52l-53.03,-1.17l-37.82,38.1Z" style="stroke-width:3px;"/>
-
-                        <path id="bodybottom" d="M214.985,329.575l124.05,-127.5l-124.05,-20.67l-135.54,20.67l135.54,127.5Z" style="stroke-width:3px;"/>
-                        
-                        <path id="upfinbottom" d="M223.025,174.665l0,-92.77l-13.79,92.77l13.79,0Z" style="fill-rule:nonzero;stroke-width:2px;"/>
-
-                    </g>
-                    </svg>
-                
-            </form>
+                <?php require_once 'body/contact.php'; ?>
         </div>
         <script src="script.js"></script>
     </body>
