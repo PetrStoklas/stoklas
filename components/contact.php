@@ -1,5 +1,3 @@
-<?php include_once 'mail/mail.php';  //mail includes the db itself ?>
-
 <form id="contact" class="contact" method ="post" action="#contact">
     <div class="left">
         <input class="name" type="text" name="fname" placeholder="First Name" label="first name input">
