@@ -33,5 +33,10 @@
                 <?php require_once 'components/contact.php'; ?>
         </div>
         <script src="script.js"></script>
+        <script>
+            if ( window.history.replaceState ) {
+                window.history.replaceState( null, null, window.location.href );
+            }
+        </script>
     </body>
 </html>
