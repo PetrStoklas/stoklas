@@ -9,7 +9,7 @@
         $to = "petrstoklas@gmail.com";
         $subject = "test";
         $message = "test";
-        $headers = "from: webmail@domena.koncovka \n";
+        $headers = "from: tynabroz@gmail.com \n";
         $headers .= "X-mailer: phpWebmail \n";
         if( mail($to, $subject, $message, $headers) )
             {echo "OK - mail odeslán";}
