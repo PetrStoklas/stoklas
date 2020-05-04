@@ -33,3 +33,9 @@
         <script src="script.js"></script>
     </body>
 </html>
+
+<?php
+    if($_POST) {
+        echo "POSTING";
+    }
+?>
