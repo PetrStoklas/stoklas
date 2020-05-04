@@ -6,14 +6,13 @@
         isset($_POST['fname']) && 
         isset($_POST['sname'])
         ) {
-        $to = "petrstoklas@gmail.com";
-        $subject = "test";
-        $message = "test";
+        $message = $_POST['long_text'];
         $headers = "from: tynabroz@gmail.com \n";
         $headers .= "X-mailer: phpWebmail \n";
-        if( mail($to, $subject, $message, $headers) )
-            {echo "OK - mail odeslán";}
-        else
-            {echo "CHYBA - odeslání se nepovedlo";}
+
+        $infoHeaders = "from: {$_POST['mail']} \n";
+        $infoMessage = "Thank you for contacting Needaweb. You will get an answer within few days.";
+        mail("petrstoklas@gmail.com", "Message from Needaweb portfolio.", $message, $headers);
+        mail($_POST['mail'], "Your message to Needaweb.", $infoMessage, $infoHeaders);
     }
 ?>
