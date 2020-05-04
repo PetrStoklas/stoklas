@@ -11,5 +11,6 @@
         $headers .= "X-mailer: phpWebmail \n";
 
         mail("petrstoklas@gmail.com", "Message from Needaweb portfolio.", $message, $headers);
+        header("Location: ");
     }
 ?>
