@@ -1,7 +1,3 @@
-<?php 
-    echo "phpko funguje"
-?>
-
 <!DOCTYPE html>
 <html class="no-js" lang="en-GB">
     <head>
@@ -22,11 +18,9 @@
                 <!-- intro texts -->
                 <?php require_once 'components/intro.php'; ?>
             </div>
-
 <!--            <div class="portfolio" id="portfolio"> -->
 <!--                &lt;!&ndash; portfolio three projects &ndash;&gt;-->            
 <!--            </div>  -->
-        
             <div class="reasons" id="reasons">
                 <!-- additional text - reasons to have good website -->
                 <?php require_once 'components/reasons.php'; ?>
