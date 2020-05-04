@@ -1,3 +1,7 @@
+<?php 
+    echo "phpko funguje"
+?>
+
 <!DOCTYPE html>
 <html class="no-js" lang="en-GB">
     <head>
@@ -14,9 +18,9 @@
         <div class="container">
             <div class="navintro">
                 <!-- nav with shark -->
-                <?php require_once 'body/nav.php'; ?>
+                <?php require_once 'components/nav.php'; ?>
                 <!-- intro texts -->
-                <?php require_once 'body/intro.php'; ?>
+                <?php require_once 'components/intro.php'; ?>
             </div>
 
 <!--            <div class="portfolio" id="portfolio"> -->
@@ -25,12 +29,12 @@
         
             <div class="reasons" id="reasons">
                 <!-- additional text - reasons to have good website -->
-                <?php require_once 'body/reasons.php'; ?>
+                <?php require_once 'components/reasons.php'; ?>
             </div>
         </div>
         <div id="contact-wrap">
                 <!-- contact form -->
-                <?php require_once 'body/contact.php'; ?>
+                <?php require_once 'components/contact.php'; ?>
         </div>
         <script src="script.js"></script>
     </body>
