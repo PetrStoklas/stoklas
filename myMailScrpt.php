@@ -6,7 +6,7 @@
         isset($_POST['fname']) && 
         isset($_POST['sname'])
         ) {
-        $to = "email_příjemce";
+        $to = "petrstoklas@gmail.com";
         $subject = "test";
         $message = "test";
         $headers = "from: webmail@domena.koncovka \n";
