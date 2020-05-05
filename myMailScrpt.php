@@ -12,7 +12,10 @@
         $headers = "from: {$_POST['mail']} \n";
         $headers .= "X-mailer: phpWebmail \n";
 
-        if (empty($_POST['mail'])) $statusTwo = "2";
+        if (empty($_POST['mail'])) {
+            $statusTwo = "2";
+            header("Location: https://www.needaweb.eu");
+        }
         else if (mail("petrstoklas@gmail.com", "Message from Needaweb portfolio.", $message, $headers)) {
             $statusOne = "1";
             header("Location: https://www.needaweb.eu");
