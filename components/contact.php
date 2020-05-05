@@ -1,6 +1,6 @@
 <?php require "myMailScrpt.php" ?>
 
-<form id="contact" class="contact" method ="post" action="myMailScrpt.php">
+<form id="contact" class="contact" method ="post">
     <div class="left">
         <input class="name" type="text" name="fname" placeholder="First Name" label="first name input">
         
