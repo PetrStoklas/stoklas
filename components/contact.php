@@ -1,32 +1,3 @@
-<?
-    $kokot = "kokot";
-    $status = "0";
-    if(
-        $_POST && 
-        isset($_POST['mail']) && 
-        isset($_POST['long_text']) && 
-        isset($_POST['fname']) && 
-        isset($_POST['sname'])
-        ) {
-        $message = $_POST['long_text'];
-        $headers = "from: {$_POST['mail']} \n";
-        $headers .= "X-mailer: phpWebmail \n";
-
-        if (mail("petrstoklas@gmail.com", "Message from Needaweb portfolio.", $message, $headers))
-            $statusOne = "1";
-        
-        else $statusTwo = "2";
-
-        header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
-
-        // sleep(2);
-
-        // $status = "0";
-
-        exit;
-    }
-?>
-
 <form id="contact" class="contact" method ="post" action="#contact">
     <div class="left">
         <input class="name" type="text" name="fname" placeholder="First Name" label="first name input">
