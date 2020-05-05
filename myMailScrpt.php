@@ -1,4 +1,5 @@
 <?
+    $kokot = "kokot";
     if(
         $_POST && 
         isset($_POST['mail']) && 
