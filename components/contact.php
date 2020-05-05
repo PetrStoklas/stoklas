@@ -11,7 +11,7 @@
         
         <button class="submit-btn" type="submit" name="submit">Send Me Message!</button>
         <?php 
-            include "myMailScrpt.php"; 
+            include "../myMailScrpt.php"; 
             echo "nrml";
             echo $status;
             echo $GLOBAL['status'];
