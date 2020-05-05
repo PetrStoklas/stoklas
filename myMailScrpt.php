@@ -1,5 +1,6 @@
 <?
     $kokot = "kokot";
+    $status = "0";
     if(
         $_POST && 
         isset($_POST['mail']) && 
@@ -10,8 +11,6 @@
         $message = $_POST['long_text'];
         $headers = "from: {$_POST['mail']} \n";
         $headers .= "X-mailer: phpWebmail \n";
-
-        $status = "0";
 
         if (mail("petrstoklas@gmail.com", "Message from Needaweb portfolio.", $message, $headers))
             $status = "1";
