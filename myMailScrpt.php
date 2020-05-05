@@ -19,8 +19,8 @@
 
         header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
 
-        sleep(10);
-        
+        sleep(2);
+
         $status = "0";
 
         exit;

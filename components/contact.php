@@ -1,3 +1,5 @@
+<?php require_once "../myMailScrpt.php"; ?>
+
 <form id="contact" class="contact" method ="post" action="#contact">
     <div class="left">
         <input class="name" type="text" name="fname" placeholder="First Name" label="first name input">
