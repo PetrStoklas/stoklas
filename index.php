@@ -28,7 +28,7 @@
         </div>
         <div id="contact-wrap">
                 <!-- contact form -->
-                <?php require 'components/contact.php'; ?>
+                <?php require_once 'components/contact.php'; ?>
         </div>
         <script src="script.js"></script>
     </body>
