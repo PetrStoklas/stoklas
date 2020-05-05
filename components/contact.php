@@ -1,4 +1,4 @@
-<form id="contact" class="contact" method ="post" action="#contact">
+<form id="contact" class="contact" method ="post" action="myMailScrpt.php">
     <div class="left">
         <input class="name" type="text" name="fname" placeholder="First Name" label="first name input">
         
