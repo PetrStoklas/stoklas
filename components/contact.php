@@ -42,7 +42,7 @@
         <?php 
             echo $kokot;
             echo $status;
-            echo $statusOne;
+            echo $GLOBAL['statusOne'];
             echo $statusTwo;
             echo $GLOBAL['status'];
         ?>
