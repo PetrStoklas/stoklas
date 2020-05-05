@@ -1,4 +1,4 @@
-<?php require "myMailScrpt.php"; ?>
+<?php include "myMailScrpt.php"; ?>
 
 <form id="contact" class="contact" method ="post" action="#contact">
     <div class="left">
