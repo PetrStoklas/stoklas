@@ -1,3 +1,5 @@
+<?php require_once 'myMailScrpt.php' ?>
+
 <!DOCTYPE html>
 <html class="no-js" lang="en-GB">
     <head>
