@@ -13,9 +13,9 @@
         $headers .= "X-mailer: phpWebmail \n";
 
         if (mail("petrstoklas@gmail.com", "Message from Needaweb portfolio.", $message, $headers))
-            $status = "1";
+            $statusOne = "1";
         
-        else $status = "2";
+        else $statusTwo = "2";
 
         header("Location: https://www.needaweb.eu");
 
