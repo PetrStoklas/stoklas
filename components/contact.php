@@ -1,4 +1,4 @@
-<?php require_once "myMailScrpt.php"; ?>
+<?php require "myMailScrpt.php"; ?>
 
 <form id="contact" class="contact" method ="post" action="#contact">
     <div class="left">
