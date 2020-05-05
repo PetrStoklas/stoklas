@@ -10,8 +10,19 @@
         $headers = "from: {$_POST['mail']} \n";
         $headers .= "X-mailer: phpWebmail \n";
 
-        mail("petrstoklas@gmail.com", "Message from Needaweb portfolio.", $message, $headers);
+        $status = "0";
+
+        if (mail("petrstoklas@gmail.com", "Message from Needaweb portfolio.", $message, $headers))
+            $status = "1";
+        
+        else $status = "2";
+
         header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+
+        sleep(10);
+        
+        $status = "0";
+
         exit;
     }
 ?>
