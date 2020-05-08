@@ -1,0 +1,48 @@
+@keyframes swim {
+    from {transform: scaleX(1)}
+    50% {transform: scaleX(-0.7)}
+    to {transform: scaleX(1)}
+}
+
+nav {
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 3vw;
+    height: 9vh;
+    background-color: white;
+
+    a {
+        width: 9vh;
+        //shark
+        path {
+            stroke: black;
+            fill: white;
+        }
+        #backfin {
+            animation: swim 2s ease-in-out;
+            animation-iteration-count: 2;
+            transform-origin: 40% 50%;
+        }
+        #backfin.backfinswing {
+            animation: swim 3s infinite;
+            transform-origin: 40% 50%;
+        }
+    } 
+
+    @include tablet() {
+        width: 80%;
+        margin: auto;
+        padding: 1vh 0;
+    }
+
+    @include desktop() {
+        width: 100%;
+        margin: auto;
+        padding: 1vh 0;
+    }
+}
+
+
+    

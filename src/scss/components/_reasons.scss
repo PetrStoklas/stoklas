@@ -1,0 +1,53 @@
+.reasons {
+    padding: 10% 0;
+    background-color: #F8F8F8;
+    @include tablet() {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+
+    @include desktop() {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 5% 5%;
+        background-color: white;
+    }
+
+    h2 {
+        width: 85%;
+        text-align: center;
+        @include catchyText;
+        margin: auto;
+        margin-bottom: 2em;
+
+        @include desktop() {
+            margin-bottom: 1.8em;
+            width: 100%;
+        }
+    }
+
+    p {
+        margin: 0 auto 5% auto;
+        width: 80%;
+        @include bulkText;
+        line-height: 1.5em;
+        text-align: justify;
+        text-justify: newspaper;
+
+        @include tablet() {
+            text-align: center;
+            width: 70%;
+        }
+        @include desktop() {
+            width: 22%;
+        }
+    }
+}
+
+
+
+
+

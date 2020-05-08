@@ -1,0 +1,41 @@
+@import 'mediaQueries';
+@import 'variables';
+@import 'mixins';
+
+@import 'components/intro';
+@import 'components/nav';
+@import 'components/reasons';
+@import 'components/contacts';
+
+* {
+    overflow: auto;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    @include tablet() {
+        // padding: 0 10%;
+    }
+}
+
+.container {
+    // background-color: red;
+    
+    @include desktop() {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        // height: 100vh;
+    }
+
+    .navintro {
+        @include desktop() {
+            // padding: 
+            width: 45%;
+        }
+    }
+}

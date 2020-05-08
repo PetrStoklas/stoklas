@@ -1,0 +1,73 @@
+
+//font mixins
+@mixin catchyText() { // I am peter, headings
+    font-weight: 900;
+    color: $colorOne;
+    font-size: 2em;
+    font-family: $a;
+
+    @include tablet() {
+        font-size: 4em;
+    }
+
+    @include desktop() {
+        font-size: 4em;
+    }
+}
+
+@mixin infoText() { //guiding intro paragraph
+    font-family: $b;
+    font-size: 1em;
+    font-weight: 900;
+    color: $extra-color;
+
+    @include tablet() {
+        font-size: 1.8em;
+
+    }
+
+    @include desktop() {
+        font-size: 1.5em;
+    }
+}
+
+@mixin bulkText() { // reason paras, 
+    font-family: $b;
+    font-size: 1em;
+    font-weight: 300;
+    color: #727173;
+
+    @include tablet() {
+        font-size: 2em;
+    }
+
+    @include desktop() {
+        font-size: 1.6em;
+    }
+}
+
+@mixin links() { // 3 reasons link, ..
+    font-family: $c; 
+    font-size: 1em;
+    font-weight: bold;
+    color: $extra-color;
+
+    @include tablet () {
+        font-size: 1em;
+    }
+
+    @include desktop() {
+        font-size: 1em;
+    }
+}
+
+@mixin extra() { // project names
+    font-family: $c; 
+    font-size: 1em;
+    font-weight: bold;
+    color: $extra-color;
+
+    @include tablet () {
+        font-size: 2em;
+    }
+}

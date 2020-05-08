@@ -1,0 +1,152 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lightgrey;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: lightgrey;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: lightgrey;
+}
+
+
+.contact { 
+    width: 100%;
+    height: 15vh;
+    background-color: $colorTri;
+    height: 91vh;
+    padding-top: 5%;
+    font-family: $c;
+    @include tablet() {
+        width: 80%;
+        margin: auto;
+    }
+    @include desktop() {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        height: 50vh;
+        padding: 5%;
+        background-color: #254E7D;
+    } // -------------------------------------------  <========================
+    
+    .left { //first, second, email input
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 20%;
+        width: 85%;
+        margin: 5vh auto;
+        // @include tablet() {
+            //     padding: 0 10%;
+            //     border-left: 1px black solid;
+            //     border-right: 1px black solid;
+            // }
+            @include desktop() {
+                width: 30%;
+                height: 100%;
+                margin: 0;
+            }
+            .name {
+                border: none;
+                border-radius: 8px 8px;
+                width: 70%;
+                margin: auto;
+                background-color: $colorOne;
+                // font-family: $c;
+                color: lightgrey;
+                @include tablet() {
+                    height: 40px;
+                }
+                @include desktop() {
+                    font-size: 1.2em;
+                    width: 100%;
+                    height: 10%;
+                    // margin: auto;
+                }
+            }
+    }
+        
+    .mid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 40%;
+        width: 85%;
+        margin: auto;
+        @include desktop() {
+            width: 30%;
+            height: 100%;
+            justify-content: space-around;
+            
+        }
+        .lng-txt {
+            height: 50%;
+            border: none;
+            border-radius: 8px 8px;
+            background-color: $colorOne;
+            width: 100%;
+            padding: 7px;
+            font-family: $c;
+            // font-size: 1.2em;
+            color: red;
+            @include desktop() {
+                font-size: 1.2em;
+            }
+        }
+        .submit-btn {
+            width: 70%;
+            height: 30px;
+            margin: 0 auto 0 auto;
+            border-radius: 10px 10px;
+            border: 2px black solid;
+            // background-color: red;
+            background-color: $colorTri;
+            // font-family: $c;
+            @include tablet() {
+                height: 40px;
+            }
+            @include desktop() {
+                font-weight: 700;
+                margin: 0 auto;
+            }
+        }
+    }
+    .logo-bottom {
+        @keyframes swim {
+            from {transform: scaleX(1)}
+            50% {transform: scaleX(-0.7)}
+            to {transform: scaleX(1)}
+        }
+
+        
+
+        display: block;
+        width: 30%;
+        margin: 0 auto 5% auto;
+        fill: none;
+        stroke: darkgray;
+        
+        @include desktop() {
+            margin: 0;
+            padding: 4%;
+            
+        }
+    }
+}
+
+.contact.scrolled {
+    @include desktop {
+        @keyframes arrive {
+            from { width: 95%; background-color: $colorTwo;  }
+            to {width: 100%; background-color: $colorTri; }
+        }
+        animation: arrive .5s;
+        width: 100%;
+        background-color: $colorTri;
+    }
+}
+
